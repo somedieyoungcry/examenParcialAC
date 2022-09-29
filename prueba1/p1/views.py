@@ -6,6 +6,7 @@ from .models import post1
 def muestra_datos(request):
     consulta = post1.objects.all()
     contexto = {'data': consulta}
+    LisSum = suma(consulta)
     return render(request, 'p1/index.html', contexto)
 
 def suma(val):
