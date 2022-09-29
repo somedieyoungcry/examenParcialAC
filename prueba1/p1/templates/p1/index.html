@@ -22,13 +22,13 @@
   </thead>
   <tbody>
     <tr>
-    {% for dato in data %}
+    {% for var,suma in contexto %}
       <th scope="row"></th>
-      <td>{{dato.x1}}</td>
-      <td>{{dato.x2}}</td>
-      <td>{{dato.x3}}</td>
-      <td>{{dato.x4}}</td>
-      <td>{{dato.suma}}</td>
+      <td>{{var.x1}}</td>
+      <td>{{var.x2}}</td>
+      <td>{{var.x3}}</td>
+      <td>{{var.x4}}</td>
+      <td>{{suma}}</td>1
     </tr>
   </tbody>
   {% endfor %}
