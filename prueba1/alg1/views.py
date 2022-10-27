@@ -1,12 +1,14 @@
 from multiprocessing import context
 from django.shortcuts import render
 from p1.models import post1
+#from alg1.templates.alg1 import *
 import math
+import random
 
 def algKNN(request): 
-    x1 = 10
-    x2 = 20
-    x3 = 30
+    x1 = random.randint(1,1000)
+    x2 = random.randint(1,1000)
+    x3 = random.randint(1,1000)
     df = post1.objects.all()
     ldis = distanciaEu(df,x1,x2,x3)
     ldis = sorted(ldis)

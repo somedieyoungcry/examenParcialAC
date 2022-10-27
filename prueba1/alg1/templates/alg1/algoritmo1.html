@@ -9,8 +9,23 @@
     </head>
    <body>
         <h1>Distancia Euclidiana</h1>
-        <table class="table table-dark">
+        <table class="table table-striped"> 
   <thead>
+<form>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Ingrese X1</label>
+    <input type="text" class="form-control" id="inputx1" placeholder="X1">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Ingrese X2</label>
+    <input type="text" class="form-control" id="inputx2" placeholder="X2">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Ingrese X3</label>
+    <input type="text" class="form-control" id="inputx3" placeholder="X3">
+  </div>
+  <button type="submit" class="btn btn-primary">Accept</button>
+</form>
     <tr>
       <th scope="col">x1</th>
       <th scope="col">x3</th>
@@ -20,7 +35,7 @@
   </thead>
   <tbody>
     <tr>
-    {% for var,distanciaEu in contexto %}1
+    {% for var,distanciaEu in contexto %}
       <td>{{var.x1}}</td>
       <td>{{var.x3}}</td>
       <td>{{var.x4}}</td>
