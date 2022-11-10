@@ -15,6 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from alg1 import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -23,4 +24,5 @@ urlpatterns = [
     path('', include('alg1.urls')),
     path('', include('alg2.urls')),
     path('', include('alg3.urls')),
+    path('buscar/', views.buscar),
 ]
